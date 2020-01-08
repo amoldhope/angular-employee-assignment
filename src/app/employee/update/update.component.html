@@ -1,0 +1,31 @@
+
+
+<form >
+    <div class="form-group">
+        <label for="" > employee id</label>
+        <input  name="id"  [(ngModel)]="employee.id" #ctrl="ngModel" required >
+    </div>
+
+    <div class="form-group">
+
+        <label for="">name</label>
+        <input type="text " name="name" [(ngModel)] ="employee.name">
+
+    </div>
+    <div class="form-group">
+
+        <label for="">age</label>
+        <input type="text " name="age" [(ngModel)] ="employee.age">
+
+    </div>
+
+    <div class="form-group">
+
+        <label for="">mobile</label>
+        <input type="text " name="mobile" [(ngModel)] ="employee.mobile">
+
+    </div>
+    {{employee.mobile}}
+
+    <button (click)="onSubmit()">submit</button>
+</form>
